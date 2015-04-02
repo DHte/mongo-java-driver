@@ -1097,7 +1097,7 @@ to clean up resources&lt;/li&gt;
 &lt;h2 id=&#34;get-a-collection&#34;&gt;Get a Collection&lt;/h2&gt;
 
 &lt;p&gt;To get a collection to operate upon, specify the name of the collection to
-the &lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoDatabase.html#getCollection-java.lang.String-
+the &lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoDatabase.html#getCollection-java.lang.String-
 &#34;&gt;&lt;code&gt;getCollection(String collectionName)&lt;/code&gt;&lt;/a&gt;
 method:&lt;/p&gt;
 
@@ -1186,7 +1186,7 @@ for (int i = 0; i &amp;lt; 100; i++) {
 
 &lt;p&gt;Now that we&amp;rsquo;ve inserted 101 documents (the 100 we did in the loop, plus
 the first one), we can check to see if we have them all using the
-&lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoCollection#count--.html
+&lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoCollection#count--.html
 &#34;&gt;count()&lt;/a&gt;
 method. The following code should print &lt;code&gt;101&lt;/code&gt;.&lt;/p&gt;
 
@@ -1202,7 +1202,7 @@ method. The following code should print &lt;code&gt;101&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;query-the-collection&#34;&gt;Query the Collection&lt;/h2&gt;
 
 &lt;p&gt;Use the
-&lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoCollection.html#find--
+&lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoCollection.html#find--
 &#34;&gt;find()&lt;/a&gt;
 method to query the collection.&lt;/p&gt;
 
@@ -1211,9 +1211,9 @@ method to query the collection.&lt;/p&gt;
 &lt;p&gt;call the first() method on the result of the find() of method&lt;/p&gt;
 
 &lt;p&gt;To get the first document in the collection, call the
-&lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoIterable.html#first--
+&lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoIterable.html#first--
 &#34;&gt;first()&lt;/a&gt;
-method on the &lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoCollection.html#find--
+method on the &lt;a href=&#34;http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoCollection.html#find--
 &#34;&gt;find()&lt;/a&gt;
 operation. &lt;code&gt;collection.find().first()&lt;/code&gt; returns the first document or null rather than a cursor.
 This is useful for queries that should only match a single document, or if you are

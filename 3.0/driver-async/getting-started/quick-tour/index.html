@@ -1989,7 +1989,7 @@ to clean up resources</li>
 <h2 id="get-a-collection">Get a Collection</h2>
 
 <p>To get a collection to operate upon, specify the name of the collection to
-the <a href="http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoDatabase.html#getCollection-java.lang.String-
+the <a href="http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoDatabase.html#getCollection-java.lang.String-
 "><code>getCollection(String collectionName)</code></a>
 method:</p>
 
@@ -2078,7 +2078,7 @@ for (int i = 0; i &lt; 100; i++) {
 
 <p>Now that we&rsquo;ve inserted 101 documents (the 100 we did in the loop, plus
 the first one), we can check to see if we have them all using the
-<a href="http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoCollection#count--.html
+<a href="http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoCollection#count--.html
 ">count()</a>
 method. The following code should print <code>101</code>.</p>
 
@@ -2094,7 +2094,7 @@ method. The following code should print <code>101</code>.</p>
 <h2 id="query-the-collection">Query the Collection</h2>
 
 <p>Use the
-<a href="http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoCollection.html#find--
+<a href="http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoCollection.html#find--
 ">find()</a>
 method to query the collection.</p>
 
@@ -2103,9 +2103,9 @@ method to query the collection.</p>
 <p>call the first() method on the result of the find() of method</p>
 
 <p>To get the first document in the collection, call the
-<a href="http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoIterable.html#first--
+<a href="http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoIterable.html#first--
 ">first()</a>
-method on the <a href="http://api.mongodb.org/java/3.0/?com/mongodb/client/MongoCollection.html#find--
+method on the <a href="http://api.mongodb.org/java/3.0/?com/mongodb/async/client/MongoCollection.html#find--
 ">find()</a>
 operation. <code>collection.find().first()</code> returns the first document or null rather than a cursor.
 This is useful for queries that should only match a single document, or if you are
